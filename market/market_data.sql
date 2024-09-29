@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS market_data;
 USE market_data;
 
--- Migros ürünleri tablosunu oluşturma
+Migros ürünleri tablosunu oluşturma
 CREATE TABLE IF NOT EXISTS migros_products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     product_name VARCHAR(255) NOT NULL,
