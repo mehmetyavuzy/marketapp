@@ -8,7 +8,7 @@ import time
 import mysql.connector
 from urllib.request import urlopen, Request
 
-# EdgeDriver'ın yolunu belirtin
+
 edge_driver_path = 'C:/Users/yavuz/Desktop/market/msedgedriver.exe'
 
 # Edge seçeneklerini ayarlama
@@ -21,8 +21,8 @@ driver = webdriver.Edge(service=service, options=edge_options)
 
 # MySQL bağlantısı
 db_config = {
-    'user': 'root',  # Buraya MySQL kullanıcı adınızı girin
-    'password': 'Mehmet69436943',  # Buraya MySQL şifrenizi girin
+    'user': 'root',  
+    'password': ''
     'host': 'localhost',
     'database': 'market_data'
 }
@@ -151,7 +151,7 @@ try:
         "https://www.bizimtoptan.com.tr/temizlik?pagenumber=18&paginationType=10",
 
 
-        # Diğer URL'ler buraya eklenecek
+       
     ]
 
     # Ürün bilgilerini toplama işlemi
