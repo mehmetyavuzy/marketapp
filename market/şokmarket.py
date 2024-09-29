@@ -8,7 +8,7 @@ import time
 import mysql.connector
 from urllib.request import urlopen, Request
 
-# EdgeDriver'ın yolunu belirtin
+
 edge_driver_path = 'C:/Users/yavuz/Desktop/market/msedgedriver.exe'
 
 # Edge seçeneklerini ayarlama
@@ -22,7 +22,7 @@ driver = webdriver.Edge(service=service, options=edge_options)
 # MySQL bağlantısı
 db_config = {
     'user': 'root',
-    'password': 'Mehmet69436943',
+    'password': '',
     'host': 'localhost',
     'database': 'market_data'
 }
@@ -36,7 +36,7 @@ def preprocess_price(price_str):
     except ValueError:
         return None
 
-# MySQL bağlantısını açma
+# MySQL bağlantı
 try:
     connection = mysql.connector.connect(**db_config)
     cursor = connection.cursor()
@@ -135,12 +135,6 @@ try:
         "https://www.sokmarket.com.tr/yemeklik-malzemeler-c-1770?page=9",
   
 
-
-
-
-        
-        
-        # Şok Market URL'lerini buraya ekleyin
     ]
 
     # Ürün bilgilerini toplama işlemi
